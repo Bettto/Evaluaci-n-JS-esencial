@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //Array de estudiantes
 var listaEstudiantes=[
 {"codigo":"A001", "nombre":"Luis Chavarria", "nota":78},
@@ -44,3 +45,17 @@ function mostrarPromedio() {
 }
 
 console.table (listaEstudiantes);
+=======
+function evento_onload(){
+	alert("Bienvenido a nuestro formulario de registro de usuario.");
+}
+function evento_onclick(){
+	alert("Los datos fueron enviados exitosamente");
+}
+function evento_onfocus(elemento){
+	elemento.style.background="#CCCCCC"
+}
+function evento_oncopy(){
+	alert("El texto ha sido copiado");
+}
+>>>>>>> parent of 95d0c86... primer botón
