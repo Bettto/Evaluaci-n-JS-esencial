@@ -1,0 +1,45 @@
+#cabecera{
+	background: #95a5a6;
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	top: 5%;
+	left: 10%;
+	width: 80%;
+	height: 5%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+#cuerpo{
+	background: #34495e;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	width: 80%;
+	padding: 10px 10px 10px 10px;
+	font-family: Arial;
+	color: #fff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+.button{
+	padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.texto {
+	font-size: 14px;
+}
