@@ -23,15 +23,49 @@ function leerJSON(json){
 		salida+="Código: "+json.estudiantes[i].codigo+" - "+"Nombre: "+json.estudiantes[i].nombre+" - "+"Calificación: "+json.estudiantes[i].nota+"<br>";
 	}
 	document.getElementById("planilla").innerHTML=salida;
-}
+};
 
 //Función para mostrar la planilla de estudiantes
 function mostrarPlanilla() {
     leerJSON(JSONestudiantes);
-}
+};
 
+
+/*
 //Función para calcular el promedio
+function average(array) {
+  function plus(a, b) { return a + b; }
+  //console.log(array.reduce(plus)) = 1295
+  return array.reduce(plus) / array.length;
+};
+console.log(average(JSONestudiantes.map(json.estudiantes.nota)));
+
+/*
+var Avgmarks = 0;
+
+for (var i=0; i < json.estudiantes.length; i++) {
+        Avgmarks += JSONestudiantes[i][1];
+        var avg = (Avgmarks/JSONestudiantes.length);
+}
+document.getElementById("promedio").innerHTML=("Average grade: " + (Avgmarks)/JSONestudiantes.length);
+
+
+/*
+function average(array) {
+  function plus(a, b) { return a + b; }
+  //console.log(array.reduce(plus)) = 1295
+  return array.reduce(plus) / array.length;
+}
+function age(p){return p.nota};
+console.log(average(JSONestudiantes.map(age)));
+/*
 function calcularPromedio(json){
+	function sumarNotas(a, b) {
+		return a+b;
+	}
+	return json(sumarNotas)/array.length;
+};
+console.log(calcularPromedio(JSONestudiantes.map(json.estudiantes.nota)));
 	var salida="El promedio del curso es: "
 	var sumarNotas=0;
 	for (i=0;i<json.length;i++){
@@ -40,12 +74,11 @@ function calcularPromedio(json){
 
 	}
 
-}
+
 
 //Función para mostrar el promedio
 function mostrarPromedio() {
     document.getElementById("promedio").innerHTML=calcularPromedio(JSONestudiantes);
-}
-
-
+};
+*/
 console.table (JSONestudiantes);
