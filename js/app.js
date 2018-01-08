@@ -12,6 +12,7 @@ var listaEstudiantes=[
 {"codigo":"A010", "nombre":"Alicia Bustamante", "nota":95}
 ];
 
+//Función para leer el JSON
 function leerJSON(json){
 	var salida="---Planilla de Estudiantes---<br>";
 	var i;
@@ -26,21 +27,24 @@ function mostrarPlanilla() {
     leerJSON(listaEstudiantes);
 }
 
-/*//Función para calcular el promedio
+//Función para calcular el promedio
 function calcularPromedio(json){
 	var salida="El promedio del curso es: "
-	var sumarNotas=0;
+	var sumarNotas=json[0].nota;
 	for (i=0;i<json.length;i++){
 		sumarNotas+=json[i].nota;
-		return sumarNotas/json.length;
+		Promediar=sumarNotas/json.length;
+		salida+=Promediar;
 
+		//return sumarNotas/json.length;
 	}
-
+	document.getElementById("planilla").innerHTML=salida;
 }
-*/
+
 //Función para mostrar el promedio
 function mostrarPromedio() {
-    document.getElementById("promedio").innerHTML=calcularPromedio(JSONestudiantes);
+	calcularPromedio(listaEstudiantes);
+  //  document.getElementById("promedio").innerHTML=calcularPromedio(listaEstudiantes);
 }
 
 console.table (listaEstudiantes);
