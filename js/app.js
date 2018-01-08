@@ -67,10 +67,10 @@ function NotaMasBaja(json) {
   for (i=0; i<json.length; i++) {
 		if (json[i].nota<menor){
 			menor=json[i].nota;
-			//peorEst=json[i].nombre;
+			peorEst=json[i].nombre;
 		};
 	}
-  document.getElementById("peorNota").innerHTML="La peor nota es de:  "+menor;
+  document.getElementById("peorNota").innerHTML="La peor nota es de:  "+peorEst;
 };
 
 //Función para mostrar la nota más baja
